@@ -47,17 +47,6 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:yash.patel@baps.dev"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Download",
-      "href": "https://na.baps.org"
-    }
   },
   "contextual": {
     "options": [
