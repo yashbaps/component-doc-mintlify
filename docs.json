@@ -22,6 +22,7 @@
           {
             "group": "Component",
             "pages": [
+              "component/decode",
               "component/theme",
               "component/layout",
               "component/bl"
