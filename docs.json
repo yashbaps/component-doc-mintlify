@@ -35,6 +35,12 @@
               "advanced/scope",
               "advanced/multiroute"
             ]
+          },
+          {
+            "group": "What's Next",
+            "pages": [
+              "next/start"
+            ]
           }
         ],
     "global": {
