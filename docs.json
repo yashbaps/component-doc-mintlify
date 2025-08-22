@@ -15,8 +15,8 @@
             "pages": [
               "index/index",
               "index/introduction",
-              "index/baseline",
-              "index/type"
+              "index/type",
+              "index/baseline"
             ]
           },
           {
