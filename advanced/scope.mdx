@@ -39,42 +39,6 @@ Column(
 
 ---
 
-## **1. Limited Scope Components**
-
-- Their **existence only matters when they are written in the widget tree**.
-- They don’t need to notify ancestors or persist beyond their immediate lifecycle.
-- Typical examples: `Text`, `Container`, `Padding`, `Icon`.
-
-They **just render** and don’t communicate with higher-level structures.
-
-### Example: Limited Scope Widget
-
-```dart
-class LimitedScopeWidget extends StatelessWidget {
-  final String text;
-
-  const LimitedScopeWidget({super.key, required this.text});
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: const TextStyle(fontSize: 18, color: Colors.black),
-    );
-  }
-}
-
-// Usage:
-Column(
-  children: const [
-    LimitedScopeWidget(text: "Hello"),
-    LimitedScopeWidget(text: "World"),
-  ],
-);
-```
-
----
-
 ## **2. Wide Range Scope Components**
 
 - Their **existence matters higher up in the tree hierarchy**.
