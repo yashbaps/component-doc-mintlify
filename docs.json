@@ -31,8 +31,8 @@
           {
             "group": "Advanced",
             "pages": [
-              "advanced/interdepend",
               "advanced/scope",
+              "advanced/interdepend",
               "advanced/multiroute"
             ]
           },
