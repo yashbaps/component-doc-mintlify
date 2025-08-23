@@ -57,5 +57,8 @@
   "contextual": {
     "options": [
    ]
-  }
+  },"appearance": {
+  "default": "light",
+  "strict": false
+}
 }
