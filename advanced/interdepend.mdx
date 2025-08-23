@@ -7,6 +7,10 @@ description: "cross-scope accessibility where components are loosely coupled but
 In a real-world scenario, a child component (like **Photo**) may need features provided by a parent scope (like **DownloadManager**).\
 The parent manages heavy logic (caching, expiry, disk persistence, etc.) while the child just declares **intent** (e.g., "download this image and give me updates").
 
+<Tip>
+  If you haven't read [Scoped Components](/advanced/scope) yet, read [Scoped Components](/advanced/scope) first, before proceeding.
+</Tip>
+
 Key ideas:
 
 1. **Parent scope** is generic → accepts any child that can register with it.
