@@ -16,7 +16,7 @@ Key ideas:
 3. **Parent exposes scoped builders** → children can listen to parent’s internal states without tight coupling.
 4. **Independent dashboards** → Parent can show analytics/monitoring across all registered children.
 
-### Example Scenario: Photo Preview with Caching
+## Example Scenario: Photo Preview with Caching
 
 A **Photo** component may need to:
 
@@ -26,7 +26,7 @@ A **Photo** component may need to:
 
 Instead of embedding download logic directly inside the Photo widget, we delegate it to a **Download Manager Component**.
 
-### Concept
+## Concept
 
 - **DownloadManager**
   - A standalone scope component responsible for managing file downloads, caching, and expiry policies.
@@ -37,7 +37,7 @@ Instead of embedding download logic directly inside the Photo widget, we delegat
   - When inside a `DownloadManagerScope`, it **registers itself** and delegates work to the download manager.
   - When no scope is found, it **falls back** to a direct `Image.network`.
 
-### Core Principles
+## Core Principles
 
 1. **Cross Accessibility**
    - Scoped parent (Download Manager) accepts not only its “own children,” but also any generic child that knows how to talk to it via contracts (events, interfaces).
@@ -50,7 +50,7 @@ Instead of embedding download logic directly inside the Photo widget, we delegat
 4. **Scoped Builders**
    - Parent can expose builder components (e.g., `DownloadBuilder`) so children can **react to download progress/state** without having to know implementation details.
 
-### Example Implementation
+## Example Implementation
 
 ### Download Manager Bloc (Scoped Component)
 
@@ -248,7 +248,7 @@ ListView(
 );
 ```
 
-### Summary
+## Summary
 
 - **Parent (Download Manager)** manages heavy BL (downloads, caching, expiry).
 - **Child (Photo)** stays **loosely coupled** and can survive without parent.
